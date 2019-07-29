@@ -1,6 +1,7 @@
 # Python_Note
  Python_learning_curve
 
+Day 01
 1.进程和线程
 
 - 进程之间有着自己独立的内存，因此必须通过进程间通信机制（IPC，Inter-Process Communication）来实现数据共享，具体的方式
@@ -12,3 +13,4 @@
 - python的os模块提供了fork()函数.
 - 两个进程p1 p2，当p1和p2都call了start()函数以后，当其中一个进程p1调用join()则主进程需要等待p1完成后才可以继续下去,p2仍然可
 以返回结果
+
