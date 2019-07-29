@@ -4,6 +4,8 @@
 Day 01
 <<<<<<< Updated upstream
 =======
+
+>>>>>>> Stashed changes
 1.进程和线程
 
 - 进程之间有着自己独立的内存，因此必须通过进程间通信机制（IPC，Inter-Process Communication）来实现数据共享，具体的方式
