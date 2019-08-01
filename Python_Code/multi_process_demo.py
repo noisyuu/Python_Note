@@ -8,7 +8,6 @@ def download_task(filename, sleepTime):
     print("%s %s" % (filename, time.strftime("download start at: %Y-%m %d %H:%M:%S", time.localtime())))
     print("进程号 [%s] " % getpid())
     time_to_download = randint(5, 15)
-
     l = 1
     while(True):
         l
