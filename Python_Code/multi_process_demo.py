@@ -9,6 +9,9 @@ def download_task(filename, sleepTime):
     print("进程号 [%s] " % getpid())
     time_to_download = randint(5, 15)
 
+    l = 1
+    while(True):
+        l
     if time is None:
         time_to_download = sleepTime
     time.sleep(time_to_download)
@@ -17,12 +20,13 @@ def download_task(filename, sleepTime):
 
 def main():
     start = time.time()
-    p1 = Process(target=download_task, args=('Filename 1',15 ,))
-    p2 = Process(target=download_task, args=('Filename 2',5,))
-    # download_task('Filename 2')
-    p1.start()
-    p2.start()
-    p1.join()
+    processes = []
+    for i in range(5):
+        p = Process(target=download_task, args=('Filename 1',15 ,))
+        processes.append(p)
+        p.start()
+    for p in processes:
+        p.join()
     end = time.time()
     print('总共耗费了%.2f秒' % (end - start))
 
