@@ -17,7 +17,6 @@ Day 01
 
 Day2学习目标：
 1.了解以及使用多线程
-2. 如何消除github中的conflict2. 如何消除github中的conflict
 2. 如何消除github中的conflict
 
 Day3
