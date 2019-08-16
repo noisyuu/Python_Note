@@ -9,8 +9,6 @@ def download_task(filename, sleepTime):
     print("进程号 [%s] " % getpid())
     time_to_download = randint(5, 15)
     l = 1
-    while(True):
-        l
     if time is None:
         time_to_download = sleepTime
     time.sleep(time_to_download)
